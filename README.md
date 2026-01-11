@@ -7,6 +7,7 @@ This is a demonstration of <https://github.com/forge-42/react-router-devtools/is
 - Clone the repo
 - Run `npm i`
 - Run `npm run dev`
+- Go to the /home/error route for the repro
 
 # Reproduction Steps
 

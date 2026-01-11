@@ -1,3 +1,3 @@
-import { type RouteConfig, index, layout } from "@react-router/dev/routes";
+import { type RouteConfig, index, layout, route } from "@react-router/dev/routes";
 
-export default [index("routes/home.tsx"), layout("routes/layout.tsx", [{ file: "routes/error.tsx", path: "home/error" }])] satisfies RouteConfig;
+export default [index("routes/home.tsx"), route("error", "routes/error.tsx"), layout("routes/layout.tsx", [{ file: "routes/error-nested.tsx", path: "home/error" }])] satisfies RouteConfig;
