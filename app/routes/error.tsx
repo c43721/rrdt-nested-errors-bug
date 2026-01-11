@@ -11,13 +11,10 @@ export function loader() {
 }
 
 export default function Component({ loaderData }: Route.ComponentProps) {
-  return <SharedComponent message={`From the component: ${loaderData.dang}`} />;
+  return <div>From the component: {loaderData.dang}</div>;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
-  return <SharedComponent message={`From the error boundary: ${(error as any).message}`} />;
+  return <div>From the error boundary: {(error as any).message}</div>;
 }
 
-function SharedComponent({ message }: { message: string }) {
-  return <div>{message}</div>
-}
